@@ -24,14 +24,14 @@
 
 
 <!-- title section starts -->
-      <div class="wrap title">
+      <div class="wrap title flex-column text-center">
         <div class="title-content">
           <h2>You have accessed our website from 
-            <span>a location outside of Korea.</span></h2>
+            <strong><span>a location outside of Korea.</span></strong></h2>
         </div>
         <p>Outside of Korea, quotations are only available through phone consultation.</p>
         <p>Please call
-            <span> +82-2-512-5242 for inquiries.</span>
+            <strong><a href="#"> +82-2-512-5242 for inquiries.</a></strong>
         </p>
       </div>
 <!-- title section ends -->
@@ -50,17 +50,6 @@
               <span class="radiobox"><input type="radio" name="o_type" id="o_type2" value="2"><label for="o_type2">I would like an on-site consultation</label></span>
           </div>
         </div>
-
-
-        <!-- <div class="options col-5 d-flex">
-          <input type="radio">
-          <div class="option d-flex">
-            <p>Please send us a quote.</p>
-          </div>
-          <div class="option">
-            <p>I would like an on-site consultation.</p>
-          </div>
-        </div> -->
       </div>
 <!-- method section ends -->
 
@@ -78,26 +67,13 @@
             <span class="radiobox"><input type="radio" name="o_type" id="o_type2" value="2"><label for="o_type2">Planning type</label></span>
             <span class="radiobox"><input type="radio" name="o_type" id="o_type2" value="2"><label for="o_type2">Other complex</label></span>
           </div>
-
-          <!-- <div class="option">
-            <p>home page</p>
-          </div>
-          <div class="option">
-            <p>shopping mall</p>
-          </div>
-          <div class="option">
-            <p>Planning type</p>
-          </div>
-          <div class="option">
-            <p>Other complex</p>
-          </div> -->
         </div>
       </div>
 <!-- field section ends -->
 
 
 <!-- cost section starts -->
-      <div class="wrap">
+      <div class="wrap cost">
         <div class="heading d-flex col-7">
           <span class="num">3</span>
           <div class="heading-group">
@@ -106,7 +82,6 @@
           </div>
         </div>
         <div class="options col-5">
-
           <div class="option">
             <span class="radiobox"><input type="radio" name="o_type" id="o_type1" value="1"><label for="o_type1">2 million won</label></span>
             <span class="radiobox"><input type="radio" name="o_type" id="o_type2" value="2"><label for="o_type2">3 million won</label></span>
@@ -117,31 +92,6 @@
             <span class="radiobox"><input type="radio" name="o_type" id="o_type2" value="2"><label for="o_type2">30 million won</label></span>
             <span class="radiobox"><input type="radio" name="o_type" id="o_type2" value="2"><label for="o_type2">More than 50 million won</label></span>
           </div>
-
-          <!-- <div class="option">
-            <p>2 million won</p>
-          </div>
-          <div class="option">
-            <p>3 million won</p>
-          </div>
-          <div class="option">
-            <p>5 million won</p>
-          </div>
-          <div class="option">
-            <p>10 million won</p>
-          </div>
-          <div class="option">
-            <p>15 million won</p>
-          </div>
-          <div class="option">
-            <p>20 million won</p>
-          </div>
-          <div class="option">
-            <p>30 million won</p>
-          </div>
-          <div class="option">
-            <p>More than 50 million won</p>
-          </div> -->
         </div>
       </div>
 <!-- cost section ends -->
@@ -157,17 +107,19 @@
           </div>
         </div>
         <form class="options col-5 d-flex" action="">
-          <input type="text" placeholder="Company Name">
-          <input type="text" placeholder="manager">
-          <input type="text" placeholder="title">
-          <input type="text" placeholder="Landing phone number">
-          <input type="text" placeholder="Mobile phone number (please enter accurately!)">
-          <input type="text" placeholder="Email Address">
-          <input type="text" placeholder="Current homepage">
-          <input type="text" placeholder="Reference homepage">
-          <input type="text" placeholder="Reference homepage">
-          <input type="text" placeholder="Reference homepage">
-          <input type="text" placeholder="Reference homepage">
+          <div class="option info row">
+            <input class="col-6" type="text" placeholder="Company Name">
+            <input class="col-6" type="text" placeholder="manager">
+            <input class="col-6" type="text" placeholder="title">
+            <input class="col-6" type="text" placeholder="Landing phone number">
+            <input class="col-6" type="text" placeholder="Mobile phone number (please enter accurately!)">
+            <input class="col-6" type="text" placeholder="Email Address">
+            <input class="col-12" type="text" placeholder="Current homepage">
+            <input class="col-12" type="text" placeholder="Reference homepage">
+            <input class="col-12" type="text" placeholder="Reference homepage">
+            <input class="col-12" type="text" placeholder="Reference homepage">
+            <input class="col-12" type="text" placeholder="Reference homepage">
+          </div>
         </form>
       </div>
 <!-- customer info section ends -->
@@ -179,7 +131,7 @@
           <span class="num">5</span>
           <h4>What field do you want to produce in?</h4>
         </div>
-        <textarea class="options col-5 d-flex" name="text" id="text" cols="40" rows="10" placeholder="Please do not feel pressured and please feel free to enter any details you have in your mind or any details you are concerned about."></textarea>
+        <textarea class="options col-5" name="text" id="text" cols="40" rows="10" placeholder="Please do not feel pressured and please feel free to enter any details you have in your mind or any details you are concerned about."></textarea>
       </div>
 <!-- message section ends -->
 
@@ -190,7 +142,7 @@
           <span class="num">6</span>
           <h4>If there are any materials you need to refer to, please attach them.</h4>
         </div>
-        <form class="options col-5 d-flex" action="">
+        <form class="options col-5" action="">
           <input type="file">
           <input type="file">
         </form>
@@ -199,19 +151,29 @@
 
 
 <!-- agreement section starts -->
-      <div class="wrap">
-        <div class="heading d-flex col-7">
+      <div class="wrap agree">
+        <div class="heading d-flex flex-column col-7">
           <h4>What field do you want to produce in?</h4>
-          <div class="option">
-              <p>I agree to the collection of personal information.</p>
-          </div>
+          <p>I agree to the collection of personal information.</p>
         </div>
-        <textarea class="options col-5 d-flex" name="text" id="text" cols="40" rows="10" placeholder="3ANI&C Co., Ltd. notifies and provides guidance on the following matters regarding the collection and use of information of companies/organizations and individuals in accordance with relevant laws and regulations.
+        <div class="agree-box col-5">
+          <p>3ANI&amp;C Co., Ltd. notifies and provides guidance on the following matters regarding the collection and use of information of companies/organizations and individuals in accordance with relevant laws and regulations.</p>
+          <br>
+          <br>
+          <p>1. Purpose of information collection: Consultation and progress on homepage creation</p>
+          <br>
+          <p>2. Collection/use items: Company name, name (person in charge), contact information, email, consultation type, consultation content</p>
+          <br>
+          <p>3. Retention and use period: After completion of website creation consultation 6 months, immediately upon request for deletion by the information provider </p>
+          <br>
+          <p>4. Personal information processing officer: Phone 1588-5241 / Email website@website.co.kr</p>
+        </div>
+        <!-- <textarea class="options col-5" name="text" id="text" cols="40" rows="10" placeholder="3ANI&C Co., Ltd. notifies and provides guidance on the following matters regarding the collection and use of information of companies/organizations and individuals in accordance with relevant laws and regulations.
               1. Purpose of information collection: Consultation and progress on homepage creation
               2. Collection/use items: Company name, name (person in charge), contact information, email, consultation type, consultation content
               3. Retention and use period: After completion of website creation consultation 6 months, immediately upon request for deletion by the information provider
               4. Personal information processing officer: Phone 1588-5241 / Email website@website.co.kr">
-        </textarea>
+        </textarea> -->
       </div>
 <!-- agreement section ends -->
 
