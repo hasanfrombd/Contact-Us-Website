@@ -170,8 +170,65 @@ form .option input {
     line-height: 1.3em;
     letter-spacing: -.03em;
     background: var(--brand-color-primary);
-    /* text-align: center; */
     border: 0;
     border-radius: 35px;
     margin: 0 auto;
 }
+
+/* responsive starts  */
+@media screen and (max-width:575px) {
+    .top-section .content h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width:576px) {
+    .top-section .content h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+}
+@media  screen and (max-width:767px) {
+    .title .title-content h2 {
+        font-size: 28px;
+    }
+    .wrapper .wrap {
+        flex-direction: column;
+    }
+    .wrapper .wrap .heading,
+    .wrapper .wrap .options {
+        width: 100%;
+    }
+    .wrapper .wrap .heading {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .agree .agree-box {
+        width: 100%;
+    }
+    .wrap .heading .num {
+        height: 40px;
+        width: 40px;
+    }
+}
+@media screen and (min-width:768px) {
+    .top-section .content h1 {
+        font-size: 65px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .top-section {
+        height: 60vh;
+        width: 100%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .top-section .content h1 {
+        font-size: 85px;
+        font-weight: 700;
+    }
+}
+
+/* responsive ends  */
