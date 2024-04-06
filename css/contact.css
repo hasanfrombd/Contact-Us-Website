@@ -14,7 +14,7 @@ strong {
     font-weight: 700;
 }
 .wrapper {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .top-section {
@@ -114,15 +114,14 @@ strong {
     gap: 0px 30px;
 }
 
-.options .option .radiobox {
+.options .option .checkbox {
     min-width: 130px;
-
     display: inline-block;
     position: relative;
     vertical-align: middle;
     margin-top: -.2em;
 }
-.options .option .radiobox input {
+.options .option .checkbox input {
     opacity: 1;
     margin-right: 8px;
     z-index: -1;
@@ -166,7 +165,7 @@ form .option input {
 }
 
 .wrap.submit-area {
-    margin-top: 100px;
+    margin-top: 30px;
 }
 .wrap.submit-area button {
     display: inline-block;
@@ -190,12 +189,6 @@ form .option input {
         font-weight: 400;
     }
 }
-/* @media screen and (min-width:576px) {
-    .top-section .content h1 {
-        font-size: 50px;
-        font-weight: 500;
-    }
-} */
 @media  screen and (max-width:767px) {
     .top-section .content h1 {
         font-size: 40px;
@@ -217,7 +210,7 @@ form .option input {
         width: 100%;
     }
     .wrapper .wrap .options {
-        padding-left: 45px;
+        padding-left: 35px;
     }
     .wrapper .wrap .heading {
         padding: 0;
