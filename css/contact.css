@@ -71,7 +71,7 @@ strong {
     transition: all .2s ease-in-out;
 }
 
-.heading {
+.wrap .heading {
     padding-left: 50px;
 }
 .wrap .heading h4 {
@@ -81,6 +81,11 @@ strong {
     line-height: 1.3em;
     letter-spacing: -.03em;
 }
+
+.wrap .heading h4,
+.wrap .heading-group {
+    width: 90%;
+}
 .agree .heading p {
     padding-left: 10px;
 }
@@ -88,15 +93,15 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -6px;
-    left: 0;
+    /* top: -6px;
+    left: 0; */
     width: 40px;
     height: 40px;
     background: var(--brand-color-primary);
     border-radius: 50% 0 50% 50%;
     color: #fff;
     font-weight: 500;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .wrap .options .option{
@@ -124,6 +129,9 @@ strong {
 }
 .cost .heading .heading-group {
     margin-right: 20px;
+}
+.wrapper .wrap .heading .heading-group p {
+    padding-left: 10px;
 }
 
 .info {
@@ -178,19 +186,28 @@ form .option input {
 /* responsive starts  */
 @media screen and (max-width:575px) {
     .top-section .content h1 {
-        font-size: 30px;
-        font-weight: 500;
+        font-size: 35px;
+        font-weight: 400;
     }
 }
-@media screen and (min-width:576px) {
+/* @media screen and (min-width:576px) {
     .top-section .content h1 {
         font-size: 50px;
         font-weight: 500;
     }
-}
+} */
 @media  screen and (max-width:767px) {
+    .top-section .content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .top-section .content p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
     .title .title-content h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .wrapper .wrap {
         flex-direction: column;
@@ -199,16 +216,24 @@ form .option input {
     .wrapper .wrap .options {
         width: 100%;
     }
+    .wrapper .wrap .options {
+        padding-left: 45px;
+    }
     .wrapper .wrap .heading {
         padding: 0;
         margin-bottom: 20px;
+    }
+    .wrap .heading h4 {
+        font-size: 18px;
     }
     .agree .agree-box {
         width: 100%;
     }
     .wrap .heading .num {
-        height: 40px;
-        width: 40px;
+        height: 25px;
+        width: 25px;
+        font-weight: 400;
+        font-size: 14px;
     }
 }
 @media screen and (min-width:768px) {
@@ -217,7 +242,6 @@ form .option input {
         font-weight: 700;
     }
 }
-
 @media screen and (max-width:1023px) {
     .top-section {
         height: 60vh;
