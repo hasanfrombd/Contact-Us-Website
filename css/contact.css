@@ -86,6 +86,10 @@ strong {
 .wrap .heading-group {
     width: 90%;
 }
+.wrap .heading-group p span {
+    color: red;
+    font-size: 20px;
+}
 .agree .heading p {
     padding-left: 10px;
 }
@@ -153,6 +157,13 @@ form .option input {
 .wrap form input {
     width: 100%;
     margin-bottom: 10px;
+}
+.wrap form .file-upload::-webkit-file-upload-button {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    margin-left: -5px;
+    cursor: pointer;
 }
 
 .agree-box {
