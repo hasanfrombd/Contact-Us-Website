@@ -233,6 +233,13 @@ form .option input {
         font-weight: 400;
         font-size: 14px;
     }
+    .wrap form.options,
+    .wrap form.upload {
+        padding-left: 0px !important;
+    }
+    .wrap textarea {
+        padding: 10px !important;
+    }
 }
 @media screen and (max-width:575px) {
     .top-section .content {
@@ -267,6 +274,27 @@ form .option input {
     .wrap .options .option span {
         font-size: 14px;
     }
+    .wrap .options .option {
+        gap: 5px 30px;
+    }
+    .wrap.submit-area {
+        margin-top: 0px;
+    }
+    .wrap.submit-area button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .wrapper {
+        padding-bottom: 0;
+    }
+    .wrap form input,
+    form .option input,
+    .wrap textarea, .agree-box {
+    padding: 5px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+}
 }
 @media screen and (min-width:768px) {
     .top-section .content h1 {
