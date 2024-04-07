@@ -27,7 +27,7 @@ strong {
 .top-section .content h1 {
     font-size: 100px;
     font-weight: 800;
-    line-height: 1.33em;
+    line-height: 1.4em;
     letter-spacing: -.02em;
 }
 .top-section .content p {
@@ -48,11 +48,10 @@ strong {
 }
 
 .title .title-content h2 {
-    /* margin-bottom: 15px; */
     color: #242424;
     font-size: 36px;
     font-weight: 400;
-    line-height: 1.33em;
+    line-height: 1.6em;
     letter-spacing: -.03em;
 }
 .title .title-content h2 span {
@@ -62,6 +61,7 @@ strong {
 .title p {
     color: var(--paragraph-color);
     font-size: 18px;
+    line-height: 1.6em;
     letter-spacing: -.03em;
     margin-bottom: 0;
 }
@@ -78,7 +78,7 @@ strong {
     padding-left: 10px;
     color: #242424;
     font-size: 20px;
-    line-height: 1.3em;
+    line-height: 1.75em;
     letter-spacing: -.03em;
 }
 
@@ -88,7 +88,8 @@ strong {
 }
 .wrap .heading-group p span {
     color: red;
-    font-size: 20px;
+    font-size: 26px;
+    vertical-align: -webkit-baseline-middle;
 }
 .agree .heading p {
     padding-left: 10px;
@@ -97,22 +98,18 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* top: -6px;
-    left: 0; */
     width: 40px;
     height: 40px;
     background: var(--brand-color-primary);
     border-radius: 50% 0 50% 50%;
     color: #fff;
     font-weight: 500;
-    /* text-align: center; */
 }
 
 .wrap .options .option{
     display: flex;
     flex-wrap: wrap;
     gap: 15px 30px;
-    /* max-width: 700px; */
 }
 .wrap .options .info {
     gap: 0px 30px;
@@ -120,21 +117,22 @@ strong {
 
 .options .option .checkbox {
     min-width: 130px;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
     margin-top: -.2em;
 }
 .options .option .checkbox input {
-    opacity: 1;
     margin-right: 8px;
-    z-index: -1;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    margin-top: -2px;
 }
 .cost .heading .heading-group {
     margin-right: 20px;
 }
 .wrapper .wrap .heading .heading-group p {
     padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.4em;
 }
 
 .info {
@@ -145,6 +143,7 @@ form .option input,
 .wrap textarea {
     padding: 7px 19px;
     font-size: 17px;
+    line-height: 1.4em;
     letter-spacing: -.03em;
     border-radius: 10px;
     background-color: #fff;
@@ -185,7 +184,7 @@ form .option input {
     color: #fff;
     font-size: 22px;
     font-weight: 400;
-    line-height: 1.3em;
+    line-height: 1.33em;
     letter-spacing: -.03em;
     background: var(--brand-color-primary);
     border: 0;
@@ -194,12 +193,7 @@ form .option input {
 }
 
 /* responsive starts  */
-@media screen and (max-width:575px) {
-    .top-section .content h1 {
-        font-size: 35px;
-        font-weight: 400;
-    }
-}
+
 @media  screen and (max-width:767px) {
     .top-section .content h1 {
         font-size: 40px;
@@ -237,6 +231,40 @@ form .option input {
         height: 25px;
         width: 25px;
         font-weight: 400;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:575px) {
+    .top-section .content {
+        padding: 0 20px;
+    }
+    .top-section .content h1 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .top-section .content p {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .title {
+        padding-top: 20px !important;
+    }
+    .title .title-content h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .title p {
+        font-size: 14px;
+    }
+    .wrap .heading h4 {
+        font-size: 16px;
+    }
+    .wrap .options .option .checkbox input {
+        margin-right: 8px;
+        height: 14px;
+        width: 14px;
+    }
+    .wrap .options .option span {
         font-size: 14px;
     }
 }
